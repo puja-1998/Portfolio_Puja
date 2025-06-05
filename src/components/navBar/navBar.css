@@ -1,95 +1,131 @@
-.navbar{
-    background-color: var(--yellow-theme-nav-background-color);
-    height: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.2rem;
-    position: sticky;
+.navbar {
+  background-color: var(--yellow-theme-nav-background-color);
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  position: sticky;
+  z-index: 1000; /* High so it appears above everything */
 }
 
-.navbar__container{
-    display: flex;
-    align-items: center;
-    width: 100%;
-    height: inherit;
-    padding: 0px 20px;
-    flex: 1;
+.navbar__container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: inherit;
+  padding: 0px 20px;
+  flex: 1;
+  z-index: 1001; /* Above overlay */
 }
 
-.navbar__container__logo{
-    color: var(--yellow-theme-main-color);
-    cursor: pointer;
+.navbar__container__logo {
+  color: var(--yellow-theme-main-color);
+  cursor: pointer;
+  text-decoration: none;
+}
+.navbar_logo {
+  font-size: 24px;
+  font-weight: 400;
+}
+.type-writer {
+  color: white;
 }
 
-.navbar__container__menu{
-    display: flex;
-    list-style: none;
-    text-align: center;
+.navbar__container__menu {
+  display: flex;
+  list-style: none;
+  text-align: center;
 }
 
-.navbar__container__menu__item{
-    line-height: 40px;
-    margin-right: 1.5rem;
-    font-size: 1.6rem;
-
+.navbar__container__menu__item {
+  line-height: 40px;
+  margin-right: 1.5rem;
+  font-size: 1.6rem;
 }
 
-.navbar__container__menu__item::after{
-    content: '';
-    display: block;
-    height: 3px;
-    width: 0;
-    background: transparent;
-    transition: all 0.5s ease;
+.navbar__container__menu__item::after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 0;
+  background: transparent;
+  transition: all 0.5s ease;
 }
 
-.navbar__container__menu__item:hover::after{
-   width: 100%;
-   background: var(--yellow-theme-main-color);
+.navbar__container__menu__item:hover::after {
+  width: 100%;
+  background: var(--yellow-theme-main-color);
 }
 
-.navbar__container__menu__item__links{
-    color: var(--yellow-theme-main-color);
-    text-decoration: none;
-    padding: 0.5rem;
+.navbar__container__menu__item__links {
+  color: var(--yellow-theme-main-color);
+  text-decoration: none;
+  padding: 0.5rem;
 }
 
-.nav-icons{
-    display: none;
+.nav-icons {
+  display: none;
+  z-index: 1002; /*On top of everything */
+}
+.navbar-overlay {
+  z-index: 1000; /* Below menu but above content */
 }
 
 /* Media query for all devices */
 
-@media only screen and (max-width : 768px){
-    .navbar__container__menu{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 100%;
-        position: absolute;
-        top: 80px;
-        left: -110%;
-        opacity: 1;
-        transition: all 0.5s ease;
-    }
+@media only screen and (max-width: 768px) {
+  .navbar__container__menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    position: absolute; /* Important */
+    top: 0;
+    left: -110%;
+    opacity: 1;
+    transition: all 0.5s ease;
+    background-color: #181818;
+    z-index: 1001;
+    height: calc(100vh - 80px); /* Full height menu */
+  }
 
-   .active{
-        background: #181818;
-        left: 0px;
-        opacity: 1;
-    }
+  .navbar__container__menu.active {
+    left: 0;
+  }
 
-    .navbar__container__menu__item{
-        border-bottom: 1px solid #282828;
-        margin: 0px;
-        padding: 20px 0px;
-    }
+  .active {
+    background: #181818;
+    left: 0px;
+    opacity: 0.9;
+  }
 
-    .nav-icons{
-        display: block;
-        cursor: pointer;
-        color: var(--yellow-theme-main-color);
-        padding-right: 20px;
-    }
+  .navbar__container__menu__item {
+    margin: 0px;
+    padding: 20px 0px;
+  }
+
+  .nav-icons {
+    display: block;
+    cursor: pointer;
+    color: var(--yellow-theme-main-color);
+    padding-right: 20px;
+  }
+
+  .navbar-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.1);
+    z-index: 999;
+  }
+
+  .navbar-overlay.active {
+    display: block;
+  }
+
+  /* Prevent background scroll */
+  /* body.lock-scroll {
+    overflow: hidden;
+  } */
 }

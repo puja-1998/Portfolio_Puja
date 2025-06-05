@@ -1,76 +1,125 @@
-.home{
-    position: relative;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-direction: column;
+.home-section {
+  position: relative;
+  padding: 2rem;
+  color: white;
 }
-.home__text-wrapper{
-    display: flex;
-    justify-content: center;
+
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-h1{
-    color: var(--yellow-theme-main-color);
-    margin: 0px;
-    font-weight: 500;
-    font-size: 8rem;
-    line-height: 10rem;
-    position: relative;
-    overflow: hidden;
-    white-space: nowrap;
-    animation: typingEffectAnimation 2.5s steps(30,end);
-  }
 
-  .home__contact-me{
-    display: flex;
-    justify-content: center;
-    margin-top: 15px;
-  }
+.home-main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
 
-  .home__contact-me button{
-    cursor: pointer;
-    padding: 10px 70px;
-    font-size: 2rem;
-    background: transparent;
-    color: var(--yellow-theme-main-color);
-    border: 1.5px solid var(--yellow-theme-main-color);
-    border-radius: 4px;
-    font-weight: 500;
-  }
+/* Right Container */
+.right-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  height: 400px;
+  width: 300px;
+  background-color: white;
+  padding: 1.25rem;
+  border-radius: 0.5rem;
+}
 
-  .home__contact-me button:hover{
-    background: var(--yellow-theme-main-color);
-    color: black;
-  }
+.profile-img {
+  width: 200px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid white;
+ box-shadow: 10px 2px 10px 10px #6b7280;
+}
 
-  
-  @media only screen and (max-width:550px) {
-    .home__text-wrapper h1{
-        font-size: 3rem;
-        line-height: 5rem;
-    }
-  }
-  
-  @media only screen and (min-width:551px) and (max-width:768px) {
-    .home__text-wrapper h1{
-        font-size: 4rem;
-        line-height: 6rem;
-    }
-  }
-  
-  @media only screen and (min-width:769px) and (max-width:990px) {
-    .home__text-wrapper h1{
-        font-size: 6rem;
-        line-height: 8rem;
-    }
-  }
+.name-heading {
+  font-size: 34px;
+  font-weight: bold;
+  color: #73658C; /* Purple */
+}
 
-  @keyframes typingEffectAnimation {
-    from{
-        width: 0;
-    }
-    to{
-        width: 100%;
-    }
-  }
+.role-heading {
+  font-size: 24px;
+  font-weight: 600;
+  color: black;
+}
+
+.social-icons {
+  display: flex;
+  gap: 2rem;
+  font-size: 1.5rem;
+}
+
+
+#social-icon {
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+.social-icon-linkedin{
+  color: blue;
+}
+.social-icon-github{
+  color: black;
+}
+
+
+/* Left Container */
+.info-container {
+  height: 400px;
+  width: 500px;
+  background-color: #6b7280; /* gray-500 */
+  padding: 1.25rem;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.greeting-text {
+  font-size: 36px;
+  font-weight: 600;
+  color: var(--yellow-theme-main-color); /* orange-500 */
+}
+
+.button-group {
+  display: flex;
+  gap: 1rem;
+}
+
+.button-link {
+  text-decoration: none;
+}
+
+.button-style {
+  height: 3.5rem;
+  width: 15rem;
+  border: 1px solid var(--yellow-theme-main-color);
+  border-radius: 9999px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: large;
+  font-weight: 400;
+}
+
+.button-style:hover {
+  background-color: var(--yellow-theme-main-color);
+  color: black;
+}
+
+.description {
+  color: white;
+  line-height: 1.5;
+}
+
+
