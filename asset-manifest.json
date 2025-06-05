@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/Portfolio_Puja/static/css/main.c69e4f23.css",
+    "main.js": "/Portfolio_Puja/static/js/main.48562a52.js",
+    "static/js/453.1594cc60.chunk.js": "/Portfolio_Puja/static/js/453.1594cc60.chunk.js",
+    "static/media/html4.jpg": "/Portfolio_Puja/static/media/html4.bd3fe8ec8b509e68dbe1.jpg",
+    "static/media/html2.jpg": "/Portfolio_Puja/static/media/html2.ce003b445e7d9039853f.jpg",
+    "static/media/html5.jpg": "/Portfolio_Puja/static/media/html5.495abfe434306837d056.jpg",
+    "static/media/html3.jpg": "/Portfolio_Puja/static/media/html3.21192d43a6d4226e2031.jpg",
+    "static/media/tailwind1.jpg": "/Portfolio_Puja/static/media/tailwind1.70cc64068574e11d7a97.jpg",
+    "static/media/github.png": "/Portfolio_Puja/static/media/github.a750c5b56276da05fdaf.png",
+    "index.html": "/Portfolio_Puja/index.html",
+    "main.c69e4f23.css.map": "/Portfolio_Puja/static/css/main.c69e4f23.css.map",
+    "main.48562a52.js.map": "/Portfolio_Puja/static/js/main.48562a52.js.map",
+    "453.1594cc60.chunk.js.map": "/Portfolio_Puja/static/js/453.1594cc60.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c69e4f23.css",
+    "static/js/main.48562a52.js"
+  ]
+}
