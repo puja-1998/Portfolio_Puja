@@ -15,6 +15,13 @@ import bakingo from "../../assets/bakingo.JPG";
 import nodejs2 from "../../assets/nodejs2.JPG";
 import stickyNotes from '../../assets/stickyNotes.JPG';
 import AgeCalculator from '../../assets/AgeCalculator.JPG';
+import digitalClock from '../../assets/digitalClock.JPG';
+import stopWatch from '../../assets/stopWatch.JPG';
+import dadJokesGenerator from '../../assets/dadJokesGenerator.JPG';
+import geeksterMon from '../../assets/geeksterMon.JPG';
+import changeColorShape from "../../assets/changeColorShape.JPG";
+import bookApp from "../../assets/bookApp.JPG";
+import feedbackUI from "../../assets/feedbackUI.JPG";
 
 // id == 1 ==> All Project
 
@@ -30,6 +37,48 @@ const projectData = [
   // id == 3 ==> JAVASCRIPT Project
   {
     id: 3,
+    name: "Book App",
+    image: bookApp,
+    sourceLink: "https://github.com/puja-1998/Book_App",
+    viewLink: "https://puja-1998.github.io/Book_App/",
+  },
+  {
+    id: 3,
+    name: "Feedback UI",
+    image: feedbackUI,
+    sourceLink: "https://github.com/puja-1998/JS_PRACTICE_PROJECT/tree/main/feedbackUI",
+    viewLink: "https://puja-1998.github.io/JS_PRACTICE_PROJECT/feedbackUI/index.html",
+  },
+  {
+    id: 3,
+    name: "PokeMon",
+    image: geeksterMon,
+    sourceLink: "https://github.com/puja-1998/JS-Projects/tree/main/GeeksterPok",
+    viewLink: "https://puja-1998.github.io/JS-Projects/GeeksterPok/index.html",
+  },
+  {
+    id: 3,
+    name: "Joke Generator",
+    image: dadJokesGenerator,
+    sourceLink: "https://github.com/puja-1998/JS-Projects/tree/main/DadJokesGenerator",
+    viewLink: "https://puja-1998.github.io/JS-Projects/DadJokesGenerator/index.html",
+  },
+  {
+    id: 3,
+    name: "StopWatch",
+    image: stopWatch,
+    sourceLink: "https://github.com/puja-1998/JS-Projects/tree/main/StopWatch",
+    viewLink: "https://puja-1998.github.io/JS-Projects/StopWatch/index.html",
+  },
+  {
+    id: 3,
+    name: "Digital Clock",
+    image: digitalClock,
+    sourceLink: "https://github.com/puja-1998/JS-Projects/tree/main/DigitalClock",
+    viewLink: "https://puja-1998.github.io/JS-Projects/DigitalClock/index.html",
+  },
+  {
+    id: 3,
     name: "Sticky Notes",
     image: stickyNotes,
     sourceLink: "https://github.com/puja-1998/JS-Projects/tree/main/StickyNotes",
@@ -41,6 +90,13 @@ const projectData = [
     image: AgeCalculator,
     sourceLink: "https://github.com/puja-1998/JS-Projects/tree/main/AgeCalculator",
     viewLink: "https://puja-1998.github.io/JS-Projects/AgeCalculator/index.html",
+  },
+  {
+    id: 3,
+    name: "Change Color & Shape",
+    image: changeColorShape,
+    sourceLink: "https://github.com/puja-1998/JS-Projects/tree/main/ChangeColorAndShape",
+    viewLink: "https://puja-1998.github.io/JS-Projects/ChangeColorAndShape/changeColor.html",
   },
   // id == 2 ==> HTML5/CSS3 Project
  
