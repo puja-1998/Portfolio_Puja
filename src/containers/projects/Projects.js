@@ -22,17 +22,67 @@ import geeksterMon from '../../assets/geeksterMon.JPG';
 import changeColorShape from "../../assets/changeColorShape.JPG";
 import bookApp from "../../assets/bookApp.JPG";
 import feedbackUI from "../../assets/feedbackUI.JPG";
+import emojiSearch from "../../assets/emojiSearch.JPG";
+import leaderboard from "../../assets/leaderboard.JPG";
+import imageSearch from "../../assets/imageSearch.JPG";
+import nestedComment from "../../assets/nestedComment.JPG";
+import MovieSearch from "../../assets/MovieSearch.JPG";
+import EndlessScroll from "../../assets/EndlessScroll.JPG";
+import expenseTracker from "../../assets/expenseTracker.JPG";
+import ImageGallary from "../../assets/ImageGallary.JPG";
+import educationPlanner from "../../assets/educationPlanner.JPG";
+import loanCalculator from "../../assets/loanCalculator.JPG";
+import quizApp from "../../assets/quizApp.JPG";
+import DirectoryApp from "../../assets/DirectoryApp.JPG";
+import contactList from "../../assets/contactList.JPG";
+
 
 // id == 1 ==> All Project
 
 const projectData = [
   // id == 4 ==> REACT Project
+  
   {
     id: 4,
-    name: "Youtube Clone",
-    image: html3,
-    sourceLink: "https://github.com/puja-1998/YouTube_Clone",
-    viewLink: "https://puja-1998.github.io/YouTube_Clone/",
+    name: "Contact List",
+    image: contactList,
+    sourceLink: "https://github.com/puja-1998/contact-list",
+    viewLink: "https://puja-1998.github.io/contact-list/",
+  },
+  {
+    id: 4,
+    name: "Directory App",
+    image: DirectoryApp,
+    sourceLink: "https://github.com/puja-1998/Directory-App-React",
+    viewLink: "https://puja-1998.github.io/Directory-App-React/",
+  },
+  {
+    id: 4,
+    name: "Quiz App",
+    image: quizApp,
+    sourceLink: "https://github.com/puja-1998/Quiz-App-React",
+    viewLink: "https://puja-1998.github.io/Quiz-App-React/",
+  },
+  {
+    id: 4,
+    name: "Loan Calculator",
+    image: loanCalculator,
+    sourceLink: "https://github.com/puja-1998/React-Loan-Calculator",
+    viewLink: "https://puja-1998.github.io/React-Loan-Calculator/",
+  },
+  {
+    id: 4,
+    name: "Education Planner",
+    image: educationPlanner,
+    sourceLink: "https://github.com/puja-1998/Geekster-Education-Planner",
+    viewLink: "https://puja-1998.github.io/Geekster-Education-Planner/",
+  },
+  {
+    id: 4,
+    name: "Image Gallery",
+    image: ImageGallary,
+    sourceLink: "https://github.com/puja-1998/Image-Gallery",
+    viewLink: "https://puja-1998.github.io/Image-Gallery/",
   },
   // id == 3 ==> JAVASCRIPT Project
   {
@@ -41,6 +91,41 @@ const projectData = [
     image: bookApp,
     sourceLink: "https://github.com/puja-1998/Book_App",
     viewLink: "https://puja-1998.github.io/Book_App/",
+  },
+  {
+    id: 3,
+    name: "Expense Tracker",
+    image: expenseTracker,
+    sourceLink: "https://github.com/puja-1998/Expense-Tracker-AI",
+    viewLink: "https://puja-1998.github.io/Expense-Tracker-AI/",
+  },
+  {
+    id: 3,
+    name: "Infinite Scrolling",
+    image: EndlessScroll,
+    sourceLink: "https://github.com/puja-1998/JS_PRACTICE_PROJECT/tree/main/Infinite-Scrolling",
+    viewLink: "https://puja-1998.github.io/JS_PRACTICE_PROJECT/Infinite-Scrolling/index.html",
+  },
+  {
+    id: 3,
+    name: "Image Search App",
+    image: imageSearch,
+    sourceLink: "https://github.com/puja-1998/JS_PRACTICE_PROJECT/tree/main/Image-Search-App",
+    viewLink: "https://puja-1998.github.io/JS_PRACTICE_PROJECT/Image-Search-App/index.html",
+  },
+  {
+    id: 3,
+    name: "Movie Search",
+    image: MovieSearch,
+    sourceLink: "https://github.com/puja-1998/JS_PRACTICE_PROJECT/tree/main/Movie-Search-Project",
+    viewLink: "https://puja-1998.github.io/JS_PRACTICE_PROJECT/Movie-Search-Project/index.html",
+  },
+  {
+    id: 3,
+    name: "Emoji Search",
+    image: emojiSearch,
+    sourceLink: "https://github.com/puja-1998/JS_PRACTICE_PROJECT/tree/main/EmojiProject",
+    viewLink: "https://puja-1998.github.io/JS_PRACTICE_PROJECT/EmojiProject/index.html",
   },
   {
     id: 3,
@@ -58,6 +143,20 @@ const projectData = [
   },
   {
     id: 3,
+    name: "Leaderboard",
+    image: leaderboard,
+    sourceLink: "https://github.com/puja-1998/JS_PRACTICE_PROJECT/tree/main/leaderBoard",
+    viewLink: "https://puja-1998.github.io/JS_PRACTICE_PROJECT/leaderBoard/index.html",
+  },
+  {
+    id: 3,
+    name: "Nested Comment",
+    image: nestedComment,
+    sourceLink: "https://github.com/puja-1998/JS_PRACTICE_PROJECT/tree/main/WeeklyTest-NestedComment",
+    viewLink: "https://puja-1998.github.io/JS_PRACTICE_PROJECT/WeeklyTest-NestedComment/index.html",
+  },
+  {
+    id: 3,
     name: "Joke Generator",
     image: dadJokesGenerator,
     sourceLink: "https://github.com/puja-1998/JS-Projects/tree/main/DadJokesGenerator",
@@ -67,15 +166,15 @@ const projectData = [
     id: 3,
     name: "StopWatch",
     image: stopWatch,
-    sourceLink: "https://github.com/puja-1998/JS-Projects/tree/main/StopWatch",
-    viewLink: "https://puja-1998.github.io/JS-Projects/StopWatch/index.html",
+    sourceLink: "https://github.com/puja-1998/JS_PRACTICE_PROJECT/tree/main/stopWatch",
+    viewLink: "https://puja-1998.github.io/JS_PRACTICE_PROJECT/stopWatch/index.html",
   },
   {
     id: 3,
     name: "Digital Clock",
     image: digitalClock,
-    sourceLink: "https://github.com/puja-1998/JS-Projects/tree/main/DigitalClock",
-    viewLink: "https://puja-1998.github.io/JS-Projects/DigitalClock/index.html",
+    sourceLink: "https://github.com/puja-1998/JS_PRACTICE_PROJECT/tree/main/digitalClock",
+    viewLink: "https://puja-1998.github.io/JS_PRACTICE_PROJECT/digitalClock/",
   },
   {
     id: 3,
