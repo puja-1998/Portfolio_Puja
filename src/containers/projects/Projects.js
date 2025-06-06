@@ -3,48 +3,136 @@ import "./project.css";
 import { TbLayoutDashboard } from "react-icons/tb";
 import PageHeaderContent from "../../components/pageHeaderContent/PageHeaderContent";
 import html1 from "../../assets/html2.jpg";
-import html2 from "../../assets/html3.jpg";
+import coffeeHousePage from "../../assets/coffeeHousePage.JPG";
+import GridTemplate from "../../assets/GridTemplate.JPG";
 import html3 from "../../assets/html4.jpg";
-import html4 from "../../assets/html5.jpg";
-import tailwind from "../../assets/tailwind1.jpg";
+import GridMagazine from "../../assets/GridMagazine.JPG";
+import html5 from "../../assets/html1.JPG";
+import shoePage from "../../assets/shoePage.JPG";
+import flexboxPhoto from "../../assets/flexboxPhoto.JPG";
+import jadoo from "../../assets/jadoo.JPG";
+import bakingo from "../../assets/bakingo.JPG";
+import nodejs2 from "../../assets/nodejs2.JPG";
+import stickyNotes from '../../assets/stickyNotes.JPG';
+import AgeCalculator from '../../assets/AgeCalculator.JPG';
 
 // id == 1 ==> All Project
-// id == 2 ==> HTML5/CSS3 Project
-// id == 3 ==> JAVASCRIPT Project
-// id == 4 ==> REACT Project
-// id == 5 ==> TAILWIND CSS Project
-// id == 6 ==> FIGMA Project
 
 const projectData = [
+  // id == 4 ==> REACT Project
+  {
+    id: 4,
+    name: "Youtube Clone",
+    image: html3,
+    sourceLink: "https://github.com/puja-1998/YouTube_Clone",
+    viewLink: "https://puja-1998.github.io/YouTube_Clone/",
+  },
+  // id == 3 ==> JAVASCRIPT Project
+  {
+    id: 3,
+    name: "Sticky Notes",
+    image: stickyNotes,
+    sourceLink: "https://github.com/puja-1998/JS-Projects/tree/main/StickyNotes",
+    viewLink: "https://puja-1998.github.io/Sticky-Notes/",
+  },
+  {
+    id: 3,
+    name: "Age Calculator",
+    image: AgeCalculator,
+    sourceLink: "https://github.com/puja-1998/JS-Projects/tree/main/AgeCalculator",
+    viewLink: "https://puja-1998.github.io/JS-Projects/AgeCalculator/index.html",
+  },
+  // id == 2 ==> HTML5/CSS3 Project
+ 
+  {
+    id: 2,
+    name: " Bakingo UI",
+    image: bakingo,
+    sourceLink: "https://github.com/puja-1998/TeamBakingo",
+    viewLink: "https://puja-1998.github.io/TeamBakingo/",
+  },
+  {
+    id: 2,
+    name: "Youtube Clone UI",
+    image: html3,
+    sourceLink: "https://github.com/puja-1998/YouTube_Clone",
+    viewLink: "https://puja-1998.github.io/YouTube_Clone/",
+  },
   {
     id: 2,
     name: "Camping Page Clone",
     image: html1,
-    link: "",
+    sourceLink:
+      "https://github.com/puja-1998/CSS_Assignments/blob/main/Assignments/weekly_test_4.html",
+    viewLink:
+      "https://puja-1998.github.io/CSS_Assignments/Assignments/weekly_test_4.html",
   },
   {
     id: 2,
-    name: "Amazon Clone",
-    image: html2,
-    link: "",
+    name: "Magazine",
+    image: GridMagazine,
+    sourceLink:
+      "https://github.com/puja-1998/CSS_Assignments/tree/main/Assignments",
+    viewLink:
+      "https://puja-1998.github.io/CSS_Assignments/Assignments/Grid_Magazine.html",
   },
   {
     id: 2,
-    name: "Youtube Clone",
-    image: html3,
-    link: "",
+    name: "Coffee House Page",
+    image: coffeeHousePage,
+    sourceLink:
+      "https://github.com/puja-1998/CSS_Assignments/tree/main/Assignments",
+    viewLink:
+      "https://puja-1998.github.io/CSS_Assignments/Assignments/homework_4.html",
   },
   {
     id: 2,
-    name: "Myntra Clone",
-    image: html4,
-    link: "",
+    name: "Puma Clone",
+    image: html5,
+    sourceLink: "https://github.com/puja-1998/Puma_Clone",
+    viewLink: "https://puja-1998.github.io/Puma_Clone/",
   },
+  {
+    id: 2,
+    name: "Grid Template",
+    image: GridTemplate,
+    sourceLink: "https://github.com/puja-1998/CSS_Assignments/tree/main/Assignments",
+    viewLink: "https://puja-1998.github.io/CSS_Assignments/Assignments/Homework_8.html",
+  },
+  {
+    id: 2,
+    name: "Shoe Page",
+    image: shoePage,
+    sourceLink:
+      "https://github.com/puja-1998/CSS_Assignments/tree/main/Assignments",
+    viewLink:
+      "https://puja-1998.github.io/CSS_Assignments/Assignments/classwork_4.html",
+  },
+  {
+    id: 2,
+    name: "Flexbox Photo Gallery",
+    image: flexboxPhoto,
+    sourceLink:
+      "https://github.com/puja-1998/CSS_Assignments/tree/main/Assignments",
+    viewLink:
+      "https://puja-1998.github.io/CSS_Assignments/Assignments/Homework_6.html",
+  },
+
+  // id == 5 ==> TAILWIND CSS Project
   {
     id: 5,
-    name: "Landing Page",
-    image: tailwind,
-    link: "",
+    name: "Jadoo Clone UI",
+    image: jadoo,
+    sourceLink: "https://github.com/puja-1998/Jadoo",
+    viewLink: "https://puja-1998.github.io/Jadoo/",
+  },
+  // id == 6 ==> Node.Js Project
+  {
+    id: 6,
+    name: "URL Shortner application",
+    image: nodejs2,
+    sourceLink: "https://github.com/puja-1998/URL-shortener-application-nodejs",
+    viewLink: "https://url-shortener-application-ntro.onrender.com/",
   },
 ];
 
@@ -71,7 +159,7 @@ const filterData = [
   },
   {
     filteredId: 6,
-    label: "Figma",
+    label: "NodeJS",
   },
 ];
 
@@ -85,6 +173,23 @@ function Projects() {
 
   function handleHover(index) {
     setHoveredValue(index);
+  }
+
+  function handleSourceCode(sourceLink) {
+    if (sourceLink) {
+      // Opens link in a new tab
+      window.open(sourceLink, "_blank");
+    } else {
+      alert("Source code link not available");
+    }
+  }
+
+  function handleViewCode(viewLink) {
+    if (viewLink) {
+      window.open(viewLink, "_blank");
+    } else {
+      alert("View Code Link not available");
+    }
   }
 
   const filteredItems =
@@ -126,11 +231,17 @@ function Projects() {
                 </a>
                 <div className="overlay">
                   {index === hoveredValue && (
-                    <div className="overlay-div" >
+                    <div className="overlay-div">
                       <p>{item.name}</p>
                       <div className="btn">
-                        <button>View Page</button>
-                        <button>Source Code</button>
+                        <button onClick={() => handleViewCode(item.viewLink)}>
+                          View Page
+                        </button>
+                        <button
+                          onClick={() => handleSourceCode(item.sourceLink)}
+                        >
+                          Source Code
+                        </button>
                       </div>
                     </div>
                   )}
