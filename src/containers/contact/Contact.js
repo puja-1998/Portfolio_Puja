@@ -43,7 +43,7 @@ function Contact() {
             method="POST"
             data-netlify="true"
             netlify-honeypot="bot-field"
-            
+             action="/thank-you"
           >
             {/* Honeypot for spam protection */}
             <input type="hidden" name="form-name" value="contact" />
