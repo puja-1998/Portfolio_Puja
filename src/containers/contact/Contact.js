@@ -42,8 +42,8 @@ function Contact() {
             name="contact"
             method="POST"
             data-netlify="true"
+            action="/thank-you"
             netlify-honeypot="bot-field"
-             action="/thank-you"
           >
             {/* Honeypot for spam protection */}
             <input type="hidden" name="form-name" value="contact" />
@@ -53,8 +53,7 @@ function Contact() {
               </label>
             </p>
 
-            
-<div className="form">
+            <div className="form">
               <div className="form-controlswrapper">
                 <div className="wrapper">
                   <input
@@ -95,7 +94,6 @@ function Contact() {
               </div>
               <button type="submit">Submit</button>
             </div>
-            
           </form>
         </Animate>
       </div>
