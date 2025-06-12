@@ -53,20 +53,7 @@ function Contact() {
               </label>
             </p>
 
-            {/* <div className="form-controlswrapper">
-              <div className="wrapper">
-                <input type="text" name="name" required />
-                <label>Name</label>
-              </div>
-              <div className="wrapper">
-                <input type="email" name="email" required />
-                <label>Email</label>
-              </div>
-              <div className="wrapper">
-                <textarea name="message" rows={5} required></textarea>
-                <label>Message</label>
-              </div>
-            </div> */}
+            
 <div className="form">
               <div className="form-controlswrapper">
                 <div className="wrapper">
