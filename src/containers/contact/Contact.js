@@ -43,7 +43,7 @@ function Contact() {
             method="POST"
             data-netlify="true"
             netlify-honeypot="bot-field"
-           
+            
           >
             {/* Honeypot for spam protection */}
             <input type="hidden" name="form-name" value="contact" />
@@ -53,7 +53,7 @@ function Contact() {
               </label>
             </p>
 
-            <div className="form-controlswrapper">
+            {/* <div className="form-controlswrapper">
               <div className="wrapper">
                 <input type="text" name="name" required />
                 <label>Name</label>
@@ -66,9 +66,49 @@ function Contact() {
                 <textarea name="message" rows={5} required></textarea>
                 <label>Message</label>
               </div>
-            </div>
+            </div> */}
+<div className="form">
+              <div className="form-controlswrapper">
+                <div className="wrapper">
+                  <input
+                    required
+                    type="text"
+                    name="name"
+                    className="inputName"
+                  />
+                  <label htmlFor="name" className="nameLabel">
+                    Name
+                  </label>
+                </div>
 
-            <button type="submit">Send</button>
+                <div className="wrapper">
+                  <input
+                    required
+                    type="e-mail"
+                    name="email"
+                    className="inputEmail"
+                  />
+                  <label htmlFor="email" className="emailLabel">
+                    Email
+                  </label>
+                </div>
+
+                <div className="wrapper">
+                  <textarea
+                    required
+                    type="text"
+                    name="description"
+                    className="inputdescription"
+                    rows={5}
+                  />
+                  <label htmlFor="description" className="descriptionLabel">
+                    Message
+                  </label>
+                </div>
+              </div>
+              <button type="submit">Submit</button>
+            </div>
+            
           </form>
         </Animate>
       </div>
