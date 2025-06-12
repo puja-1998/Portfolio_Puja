@@ -35,6 +35,7 @@ import loanCalculator from "../../assets/loanCalculator.JPG";
 import quizApp from "../../assets/quizApp.JPG";
 import DirectoryApp from "../../assets/DirectoryApp.JPG";
 import contactList from "../../assets/contactList.JPG";
+import pathlab from "../../assets/pathlab.JPG";
 
 
 // id == 1 ==> All Project
@@ -198,7 +199,13 @@ const projectData = [
     viewLink: "https://puja-1998.github.io/JS-Projects/ChangeColorAndShape/changeColor.html",
   },
   // id == 2 ==> HTML5/CSS3 Project
- 
+  {
+    id: 2,
+    name: " Pathlab UI",
+    image: pathlab,
+    sourceLink: "https://github.com/puja-1998/PathLab",
+    viewLink: "https://puja-1998.github.io/PathLab/",
+  },
   {
     id: 2,
     name: " Bakingo UI",

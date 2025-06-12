@@ -38,48 +38,37 @@ function Contact() {
             transform: "translateX(0px)",
           }}
         >
-          <form action="">
-            <div className="form">
-              <div className="form-controlswrapper">
-                <div className="wrapper">
-                  <input
-                    required
-                    type="text"
-                    name="name"
-                    className="inputName"
-                  />
-                  <label htmlFor="name" className="nameLabel">
-                    Name
-                  </label>
-                </div>
+          <form
+            name="contact"
+            method="POST"
+            data-netlify="true"
+            netlify-honeypot="bot-field"
+           
+          >
+            {/* Honeypot for spam protection */}
+            <input type="hidden" name="form-name" value="contact" />
+            <p hidden>
+              <label>
+                Don’t fill this out: <input name="bot-field" />
+              </label>
+            </p>
 
-                <div className="wrapper">
-                  <input
-                    required
-                    type="e-mail"
-                    name="email"
-                    className="inputEmail"
-                  />
-                  <label htmlFor="email" className="emailLabel">
-                    Email
-                  </label>
-                </div>
-
-                <div className="wrapper">
-                  <textarea
-                    required
-                    type="text"
-                    name="description"
-                    className="inputdescription"
-                    rows={5}
-                  />
-                  <label htmlFor="description" className="descriptionLabel">
-                    Message
-                  </label>
-                </div>
+            <div className="form-controlswrapper">
+              <div className="wrapper">
+                <input type="text" name="name" required />
+                <label>Name</label>
               </div>
-              <button type="submit">Submit</button>
+              <div className="wrapper">
+                <input type="email" name="email" required />
+                <label>Email</label>
+              </div>
+              <div className="wrapper">
+                <textarea name="message" rows={5} required></textarea>
+                <label>Message</label>
+              </div>
             </div>
+
+            <button type="submit">Send</button>
           </form>
         </Animate>
       </div>
