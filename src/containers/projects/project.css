@@ -48,10 +48,10 @@
 .project__content-cards-item-img-wrapper {
   height: 100%;
 }
-.project__content-cards-item-img-wrapper a {
+.project__content-cards-item-img-wrapper .a {
   height: 100%;
 }
-.project__content-cards-item-img-wrapper a img {
+.project__content-cards-item-img-wrapper .a img {
   height: inherit;
   object-fit: cover;
   width: 100%;

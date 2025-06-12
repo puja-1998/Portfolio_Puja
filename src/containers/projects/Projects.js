@@ -388,9 +388,9 @@ function Projects() {
               onMouseLeave={() => handleHover(null)}
             >
               <div className="project__content-cards-item-img-wrapper">
-                <a>
+                <div className="a">
                   <img src={item.image} alt="html1" />
-                </a>
+                </div>
                 <div className="overlay">
                   {index === hoveredValue && (
                     <div className="overlay-div">
