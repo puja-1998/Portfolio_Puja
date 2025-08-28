@@ -36,6 +36,7 @@ import quizApp from "../../assets/quizApp.JPG";
 import DirectoryApp from "../../assets/DirectoryApp.JPG";
 import contactList from "../../assets/contactList.JPG";
 import pathlab from "../../assets/pathlab.JPG";
+import frontend from "../../assets/Frontend.JPG";
 
 
 // id == 1 ==> All Project
@@ -296,6 +297,14 @@ const projectData = [
     sourceLink: "https://github.com/puja-1998/URL-shortener-application-nodejs",
     viewLink: "https://url-shortener-application-ntro.onrender.com/",
   },
+  // id == 7 ==> Node.Js Project
+  {
+    id: 7,
+    name: "E-Commerce application",
+    image: frontend,
+    sourceLink: "https://github.com/puja-1998/Ecommerce-OneCart",
+    viewLink: "https://ecommerce-onecart-frontendone.onrender.com ",
+  },
 ];
 
 const filterData = [
@@ -322,6 +331,10 @@ const filterData = [
   {
     filteredId: 6,
     label: "NodeJS",
+  },
+  {
+    filteredId: 7,
+    label: "MERN STACK",
   },
 ];
 
